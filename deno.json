@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "migrate": "deno run -A ./tasks/db_migrate.ts",
+    "new_migration": "deno run -A ./tasks/new_migration.ts",
+  },
+  "imports": {
+    "$std/": "https://deno.land/std/",
+    "kysely": "npm:kysely",
+    "kysely-postgres-js": "npm:kysely-postgres-js",
+    "postgres": "https://deno.land/x/postgresjs/mod.js",
+  }
+}
